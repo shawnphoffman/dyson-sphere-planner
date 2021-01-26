@@ -1,6 +1,6 @@
 {
 	"name": "dyson-sphere-planner",
-	"homepage": "http://shawnphoffman.com/dyson-sphere-planner/",
+	"homepage": "http://dyson-sphere-planner.com",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
