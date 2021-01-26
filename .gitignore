@@ -24,3 +24,4 @@ yarn-error.log*
 
 # local
 /src/.linaria_cache
+.eslintcache

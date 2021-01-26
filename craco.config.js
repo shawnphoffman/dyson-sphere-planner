@@ -1,5 +1,5 @@
 const { loaderByName, getLoader } = require('@craco/craco')
-const transformBabelLoader = require('./transformBabelLoader')
+const transformBabelLoader = require('./config/transformBabelLoader')
 
 module.exports = {
 	webpack: {
@@ -14,7 +14,7 @@ module.exports = {
 	},
 	jest: {
 		configure: jestConfig => {
-			// jestConfig.transform['^.+\\.(js|jsx|ts|tsx)$'] = require.resolve('./babelTransform.js')
+			// jestConfig.transform['^.+\\.(js|jsx|ts|tsx)$'] = require.resolve('./config/babelTransform.js')
 			return jestConfig
 		},
 	},
