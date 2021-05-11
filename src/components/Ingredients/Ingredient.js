@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import { styled } from '@linaria/react'
 
 import CycleRate from './CycleRate'
-// import Rate from './Rate'
+import Rate from './Rate'
 
 const imageSize = 30
 
@@ -29,17 +29,21 @@ const Ingredient = ({ ingredient, isAssembler }) => {
 				{/* <Rate perMin={ingredient.rate.perMin} /> */}
 				{isAssembler && (
 					<div>
-						<Rate small>{ingredient.rate.perMin * 0.75}</Rate>
+						{/* <Rate small>{ingredient.rate.perMin * 0.75}</Rate> */}
+						<Rate perMin={ingredient.rate.perMin * 0.75} small />
 						<small>{ingredient.rate.perMinLabel}</small>
 					</div>
 				)}
 				<div>
-					<Rate small={isAssembler}>{ingredient.rate.perMin}</Rate>
+					{/* <Rate small={isAssembler}>{ingredient.rate.perMin}</Rate> */}
+					{/* <Rate small={isAssembler}>{ingredient.rate.perMin}</Rate> */}
+					<Rate perMin={ingredient.rate.perMin * 1.0} small={isAssembler} />
 					<small>{ingredient.rate.perMinLabel}</small>
 				</div>
 				{isAssembler && (
 					<div>
-						<Rate small>{ingredient.rate.perMin * 1.5}</Rate>
+						{/* <Rate small>{ingredient.rate.perMin * 1.5}</Rate> */}
+						<Rate perMin={ingredient.rate.perMin * 1.5} small />
 						<small>{ingredient.rate.perMinLabel}</small>
 					</div>
 				)}
@@ -50,13 +54,13 @@ const Ingredient = ({ ingredient, isAssembler }) => {
 
 export default memo(Ingredient)
 
-const Rate = styled.span`
-	font-weight: bold;
-	/* margin-left: 2px; */
-	margin-right: 2px;
+// const Rate = styled.span`
+// 	font-weight: bold;
+// 	/* margin-left: 2px; */
+// 	margin-right: 2px;
 
-	font-size: ${props => (props.small ? 0.8 : 1.0)}em;
-`
+// 	font-size: ${props => (props.small ? 0.8 : 1.0)}em;
+// `
 
 const Wrapper = styled.div`
 	display: flex;

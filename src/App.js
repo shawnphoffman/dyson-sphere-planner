@@ -8,7 +8,7 @@ import Loading from 'components/Loaders/Loading'
 import Sidebar from 'components/Sidebar/SidebarContainer'
 // import ProductContext, { ProductContext as ProductCtx } from 'context/ProductContext'
 import ProductContext from 'context/ProductContext'
-// import RecipeContext from 'context/RecipeContext'
+import RecipeContext from 'context/RecipeContext'
 
 const ProductList = lazy(() => import('components/ProductList'))
 // const ProductList = lazy(() => {
@@ -25,14 +25,14 @@ function App() {
 	return (
 		<Sentry.ErrorBoundary fallback={<Error />} showDialog={process.env.NODE_ENV === 'production'}>
 			<ProductContext>
-				{/* <RecipeContext> */}
-				<React.Profiler id="App">
-					<FlexRows>
-						<Sidebar />
-						<ProductListWrapper />
-					</FlexRows>
-				</React.Profiler>
-				{/* </RecipeContext> */}
+				<RecipeContext>
+					<React.Profiler id="App">
+						<FlexRows>
+							<Sidebar />
+							<ProductListWrapper />
+						</FlexRows>
+					</React.Profiler>
+				</RecipeContext>
 			</ProductContext>
 		</Sentry.ErrorBoundary>
 	)

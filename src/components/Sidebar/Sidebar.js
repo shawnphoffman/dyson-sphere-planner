@@ -6,8 +6,8 @@ import * as Sentry from '@sentry/react'
 import CategoriesJson from 'data/categories-stable.json'
 
 import { ProductAction, ProductContext } from 'context/ProductContext'
+import { RecipeAction, RecipeContext } from 'context/RecipeContext'
 
-// import { RecipeAction, RecipeContext } from 'context/RecipeContext'
 import ProductListItem from './ProductListItem'
 import SectionHeader from './SectionHeader'
 import SettingCheckbox from './SettingCheckbox'
@@ -15,20 +15,20 @@ import SettingCheckbox from './SettingCheckbox'
 //
 const Sidebar = () => {
 	const [stateProduct, dispatchProduct] = useContext(ProductContext)
-	// const [stateRecipe, dispatchRecipe] = useContext(RecipeContext)
+	const [stateRecipe, dispatchRecipe] = useContext(RecipeContext)
 
-	// //
-	// const handleFractions = useCallback(() => {
-	// 	dispatchRecipe({ type: RecipeAction.TOGGLE_FRACTION })
+	//
+	const handleFractions = useCallback(() => {
+		dispatchRecipe({ type: RecipeAction.TOGGLE_FRACTION })
 
-	// 	Sentry.addBreadcrumb({
-	// 		category: 'setting-change',
-	// 		message: 'Fraction changed',
-	// 		level: Sentry.Severity.Info,
-	// 	})
+		Sentry.addBreadcrumb({
+			category: 'setting-change',
+			message: 'Fraction changed',
+			level: Sentry.Severity.Info,
+		})
 
-	// 	Panelbear.track('Fraction_Changed')
-	// }, [dispatchRecipe])
+		Panelbear.track('Fraction_Changed')
+	}, [dispatchRecipe])
 
 	//
 	const handleLeftMargin = useCallback(() => {
@@ -122,13 +122,13 @@ const Sidebar = () => {
 			{/* <VersionLabel>Early Access v0.4.2.0</VersionLabel> */}
 			<SidebarSection>
 				<SectionHeader icon="fa-cog" label="Settings" />
-				{/* <SettingCheckbox
+				<SettingCheckbox
 					label="Use Fractions"
 					name="fractions"
 					checked={stateRecipe.checked}
 					onChange={handleFractions}
 					hint="Conversions are hard"
-				/> */}
+				/>
 				{/* <SettingCheckbox
 					label="Show Cycle Amounts"
 					name="cycleAmount"

@@ -8,7 +8,6 @@ import { Integrations } from '@sentry/tracing'
 
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-require('@gouch/to-title-case')
 
 const isProduction = process.env.NODE_ENV === 'production'
 
