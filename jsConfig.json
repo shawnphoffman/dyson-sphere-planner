@@ -1,5 +1,14 @@
 {
 	"compilerOptions": {
-		"baseUrl": "src"
-	}
+		"baseUrl": "src",
+		"target": "es2017"
+	},
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules/**/*",
+		"dist/*",
+		"package.json"
+	]
 }
