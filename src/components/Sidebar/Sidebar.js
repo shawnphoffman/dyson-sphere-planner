@@ -204,10 +204,13 @@ const Sidebar = () => {
 			</HideMobile>
 
 			{/*  */}
-			{/* <Disclaimer>
-				Assets come from Satisfactory or from websites created and owned by Coffee Stain Studios. All copyright and
-				registered trademarks present in the images are proprietary to Coffee Stain Studios.
-			</Disclaimer> */}
+			<Disclaimer>
+				Assets come from Dyson Sphere Program or from websites created and owned by Youthcat Studio. All copyright and registered trademarks
+				present in the images are proprietary to Youthcat Studio.{' '}
+				<a href="https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/" target="_blank" rel="noreferrer">
+					You should buy the game if you don't own it already.
+				</a>
+			</Disclaimer>
 		</>
 	)
 }
@@ -240,22 +243,22 @@ const HideMobile = styled.div`
 	}
 `
 
-// const Disclaimer = styled.div`
-// 	width: 240px;
-// 	font-size: 11px;
-// 	color: #454545;
-// 	line-height: 1.4;
-// 	font-style: italic;
-// 	flex: 1;
-// 	display: flex;
-// 	justify-content: flex-end;
-// 	flex-direction: column;
+const Disclaimer = styled.div`
+	width: 240px;
+	font-size: 10px;
+	color: #454545;
+	line-height: 1.4;
+	font-style: italic;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
 
-// 	@media print {
-// 		display: none;
-// 	}
+	@media print {
+		display: none;
+	}
 
-// 	@media (max-width: 600px) {
-// 		display: none;
-// 	}
-// `
+	@media (max-width: 600px) {
+		display: none;
+	}
+`

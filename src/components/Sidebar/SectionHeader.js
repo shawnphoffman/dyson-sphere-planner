@@ -12,6 +12,6 @@ const SectionHeader = ({ icon, label }) => (
 export default memo(SectionHeader)
 
 const HeaderWrapper = styled.div`
-	margin: 18px 0 12px 0;
+	margin: 12px 0 12px 0;
 	font-weight: bold;
 `
