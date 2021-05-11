@@ -28,17 +28,21 @@ const Ingredient = ({ ingredient, isAssembler }) => {
 			<Quantity>
 				{/* <Rate perMin={ingredient.rate.perMin} /> */}
 				{isAssembler && (
-					<>
-						<Rate small>{ingredient.rate.perMin * 0.75}</Rate>,
-					</>
+					<div>
+						<Rate small>{ingredient.rate.perMin * 0.75}</Rate>
+						<small>{ingredient.rate.perMinLabel}</small>
+					</div>
 				)}
-				<Rate small={isAssembler}>{ingredient.rate.perMin}</Rate>
+				<div>
+					<Rate small={isAssembler}>{ingredient.rate.perMin}</Rate>
+					<small>{ingredient.rate.perMinLabel}</small>
+				</div>
 				{isAssembler && (
-					<>
-						,<Rate small>{ingredient.rate.perMin * 1.5}</Rate>
-					</>
+					<div>
+						<Rate small>{ingredient.rate.perMin * 1.5}</Rate>
+						<small>{ingredient.rate.perMinLabel}</small>
+					</div>
 				)}
-				<small>{ingredient.rate.perMinLabel}</small>
 			</Quantity>
 		</Wrapper>
 	)
@@ -46,8 +50,10 @@ const Ingredient = ({ ingredient, isAssembler }) => {
 
 export default memo(Ingredient)
 
-const Rate = styled.strong`
-	margin-left: 2px;
+const Rate = styled.span`
+	font-weight: bold;
+	/* margin-left: 2px; */
+	margin-right: 2px;
 
 	font-size: ${props => (props.small ? 0.8 : 1.0)}em;
 `
