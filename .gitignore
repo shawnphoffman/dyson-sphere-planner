@@ -23,5 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # local
-/src/.linaria_cache
 .eslintcache
+.env
+/src/.spritesmith-generated
+/src/.linaria_cache
+/raw

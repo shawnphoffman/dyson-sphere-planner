@@ -4,11 +4,14 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@panelbear/panelbear-js": "^1.2.0",
+		"@sentry/react": "^6.3.5",
+		"@sentry/tracing": "^6.3.5",
 		"@testing-library/jest-dom": "^5.11.4",
 		"@testing-library/react": "^11.1.0",
 		"@testing-library/user-event": "^12.1.10",
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
+		"react": "^0.0.0-experimental-bd070eb2c",
+		"react-dom": "^0.0.0-experimental-bd070eb2c",
 		"react-scripts": "4.0.1",
 		"web-vitals": "^0.2.4"
 	},
@@ -16,7 +19,9 @@
 		"start": "craco start",
 		"build": "craco build",
 		"test": "craco test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"generate": "node scripts/stable.js",
+		"watch": "chokidar \"./scripts/**.js\" -c \"yarn run generate\""
 	},
 	"eslintConfig": {
 		"extends": [
@@ -38,7 +43,14 @@
 	},
 	"devDependencies": {
 		"@craco/craco": "^6.0.0",
+		"@gouch/to-title-case": "^2.2.1",
+		"chalk": "^4.1.1",
+		"chokidar-cli": "^2.1.0",
 		"core-js": "^3.8.3",
+		"eslint": "^7.18.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"fraction.js": "^4.0.13",
+		"jsonfile": "^6.1.0",
 		"linaria": "^3.0.0-beta.1"
 	}
 }
