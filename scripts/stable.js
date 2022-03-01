@@ -8,11 +8,24 @@ require('@gouch/to-title-case')
 const log = args => true && console.log(args)
 
 // Original JSON
-const sourceJson = require('../raw/game-stable.json')
-const itemsJson = sourceJson.itemsData
-const recipesJson = sourceJson.recipesData
-const buildingsJson = sourceJson.buildingsData
-const techJson = sourceJson.technologiesData
+const sourceJson = require('../raw/game-stable-feb2022.json')
+const addonsJson = require('../raw/game-addons.json')
+const itemsJson = {
+	...sourceJson.itemsData,
+	...addonsJson.itemsData,
+}
+const recipesJson = {
+	...sourceJson.recipesData,
+	...addonsJson.recipesData,
+}
+const buildingsJson = {
+	...sourceJson.buildingsData,
+	...addonsJson.buildingsData,
+}
+const techJson = {
+	...sourceJson.technologiesData,
+	...addonsJson.technologiesData,
+}
 
 // Filenames
 const outputPaths = ['./src/data/data-stable.json', './public/data-stable.json']
@@ -48,6 +61,7 @@ const buildingClassToSlug = Object.keys(buildingsJson).reduce((memo, key) => {
 const processName = name => {
 	let clean = name.toLowerCase().toTitleCase()
 	clean = clean.replace('Assembling Machine', 'Assembler')
+	clean = clean.replace('Plane Smelter', 'Smelter')
 	clean = clean.replace('mk.iii', 'MK III')
 	clean = clean.replace('mk.ii', 'MK II')
 	clean = clean.replace('mk.i', 'MK I')
