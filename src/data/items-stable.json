@@ -44,10 +44,6 @@
     "name": "Automatic Piler"
   },
   {
-    "id": "C_Matrix",
-    "name": "Structure Matrix"
-  },
-  {
     "id": "Carbon_Nanotube",
     "name": "Carbon Nanotube"
   },
@@ -80,10 +76,6 @@
     "name": "Copper Ingot"
   },
   {
-    "id": "Crystal_Rubber",
-    "name": "Organic Crystal"
-  },
-  {
     "id": "Crystal_Silicon",
     "name": "Crystal Silicon"
   },
@@ -104,20 +96,20 @@
     "name": "Dyson Sphere Component"
   },
   {
-    "id": "EM-Rail_Ejector",
-    "name": "Em-Rail Ejector"
-  },
-  {
-    "id": "E_Matrix",
-    "name": "Energy Matrix"
-  },
-  {
     "id": "Electric_Motor",
     "name": "Electric Motor"
   },
   {
+    "id": "T_Matrix",
+    "name": "Electromagnetic Matrix"
+  },
+  {
     "id": "Electromagnetic_Turbine",
     "name": "Electromagnetic Turbine"
+  },
+  {
+    "id": "EM-Rail_Ejector",
+    "name": "Em-Rail Ejector"
   },
   {
     "id": "Energetic_Graphite",
@@ -126,6 +118,10 @@
   {
     "id": "Energy_Exchanger",
     "name": "Energy Exchanger"
+  },
+  {
+    "id": "E_Matrix",
+    "name": "Energy Matrix"
   },
   {
     "id": "Foundation",
@@ -138,10 +134,6 @@
   {
     "id": "Frame_Material",
     "name": "Frame Material"
-  },
-  {
-    "id": "G_Matrix",
-    "name": "Gravity Matrix"
   },
   {
     "id": "Gear",
@@ -162,6 +154,10 @@
   {
     "id": "Graviton_Lens",
     "name": "Graviton Lens"
+  },
+  {
+    "id": "G_Matrix",
+    "name": "Gravity Matrix"
   },
   {
     "id": "High-Purity_Silicon",
@@ -188,12 +184,12 @@
     "name": "Iron Ingot"
   },
   {
-    "id": "Logistic_Vessel",
-    "name": "Logistics Vessel"
-  },
-  {
     "id": "Logistics_Drone",
     "name": "Logistics Drone"
+  },
+  {
+    "id": "Logistic_Vessel",
+    "name": "Logistics Vessel"
   },
   {
     "id": "Magnet",
@@ -228,8 +224,16 @@
     "name": "Oil Extractor"
   },
   {
+    "id": "Refinery",
+    "name": "Oil Refinery"
+  },
+  {
     "id": "Orbital_Collector",
     "name": "Orbital Collector"
+  },
+  {
+    "id": "Crystal_Rubber",
+    "name": "Organic Crystal"
   },
   {
     "id": "Particle_Broadband",
@@ -246,10 +250,6 @@
   {
     "id": "Plane_Filter",
     "name": "Plane Filter"
-  },
-  {
-    "id": "Plane_Smelter",
-    "name": "Smelter"
   },
   {
     "id": "Planetary_Logistics_Station",
@@ -296,10 +296,6 @@
     "name": "Refined Oil"
   },
   {
-    "id": "Refinery",
-    "name": "Oil Refinery"
-  },
-  {
     "id": "Reinforced_Thruster",
     "name": "Reinforced Thruster"
   },
@@ -314,6 +310,10 @@
   {
     "id": "Small_Carrier_Rocket",
     "name": "Small Carrier Rocket"
+  },
+  {
+    "id": "Plane_Smelter",
+    "name": "Smelter"
   },
   {
     "id": "Smelter",
@@ -376,16 +376,16 @@
     "name": "Strange Matter"
   },
   {
+    "id": "C_Matrix",
+    "name": "Structure Matrix"
+  },
+  {
     "id": "Sulphuric_Acid",
     "name": "Sulfuric Acid"
   },
   {
     "id": "Super-magnetic_Ring",
     "name": "Super-Magnetic Ring"
-  },
-  {
-    "id": "T_Matrix",
-    "name": "Electromagnetic Matrix"
   },
   {
     "id": "Tesla_Tower",

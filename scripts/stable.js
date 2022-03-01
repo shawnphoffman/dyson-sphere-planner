@@ -281,7 +281,14 @@ categoryOutputPaths.forEach((path, i) => {
 })
 
 const uniqueItems = Object.keys(outputJson.items)
-	.sort()
+	.sort((a, b) => {
+		const aName = outputJson.items[a].name
+		const bName = outputJson.items[b].name
+
+		if (aName > bName) return 1
+		if (bName > aName) return -1
+		return 0
+	})
 	.map(o => {
 		return {
 			id: o,
