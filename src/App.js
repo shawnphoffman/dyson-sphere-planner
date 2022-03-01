@@ -5,6 +5,7 @@ import * as Sentry from '@sentry/react'
 
 import Error from 'components/Errors/AppError'
 import Loading from 'components/Loaders/Loading'
+import Scroller from 'components/Scroller/Scroller'
 import Sidebar from 'components/Sidebar/SidebarContainer'
 // import ProductContext, { ProductContext as ProductCtx } from 'context/ProductContext'
 import ProductContext from 'context/ProductContext'
@@ -30,6 +31,7 @@ function App() {
 						<FlexRows>
 							<Sidebar />
 							<ProductListWrapper />
+							<Scroller />
 						</FlexRows>
 					</React.Profiler>
 				</RecipeContext>

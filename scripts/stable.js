@@ -30,6 +30,7 @@ const techJson = {
 // Filenames
 const outputPaths = ['./src/data/data-stable.json', './public/data-stable.json']
 const categoryOutputPaths = ['./src/data/categories-stable.json']
+const itemsOutputPaths = ['./src/data/items-stable.json']
 const outputJson = { items: {}, categories: [] }
 
 // Helpers
@@ -279,11 +280,32 @@ categoryOutputPaths.forEach((path, i) => {
 	})
 })
 
+const uniqueItems = Object.keys(outputJson.items)
+	.sort()
+	.map(o => {
+		return {
+			id: o,
+			name: outputJson.items[o].name,
+		}
+	})
+
+log('')
+log('ITEMS')
+log(uniqueItems)
+log('')
+
+itemsOutputPaths.forEach((path, i) => {
+	jsonfile.writeFile(path, uniqueItems, i !== 0 ? {} : { spaces: 2 }, function (err) {
+		if (err) console.error(err)
+		else console.log('FINISHED ITEMS: ' + path)
+	})
+})
+
 // Save the clean file
 outputPaths.forEach((path, i) => {
 	jsonfile.writeFile(path, outputJson, i !== 0 ? {} : { spaces: 2 }, function (err) {
 		if (err) console.error(err)
-		else console.log('FINISH DATA: ' + path)
+		else console.log('FINISHED DATA: ' + path)
 	})
 })
 
