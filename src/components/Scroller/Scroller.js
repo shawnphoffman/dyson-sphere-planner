@@ -1,13 +1,7 @@
-import React, { memo, useCallback, useContext } from 'react'
+import React, { memo } from 'react'
 import { styled } from '@linaria/react'
 
-// import * as Panelbear from '@panelbear/panelbear-js'
-// import * as Sentry from '@sentry/react'
 import ItemsJson from 'data/items-stable.json'
-
-// import ProductListItem from './ProductListItem'
-// import SectionHeader from './SectionHeader'
-// import SettingCheckbox from './SettingCheckbox'
 
 //
 const Scroller = () => {
