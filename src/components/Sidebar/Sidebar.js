@@ -244,7 +244,6 @@ const HideMobile = styled.div`
 `
 
 const Disclaimer = styled.div`
-	width: 240px;
 	font-size: 10px;
 	color: #454545;
 	line-height: 1.4;

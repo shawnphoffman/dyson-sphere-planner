@@ -9,7 +9,7 @@
   },
   {
     "id": "Advanced_Mining_Machine",
-    "name": "Adv. Mining Machine"
+    "name": "Advanced Mining Machine"
   },
   {
     "id": "Annihilation_Constraint_Sphere",
@@ -252,6 +252,10 @@
     "name": "Plane Filter"
   },
   {
+    "id": "Plane_Smelter",
+    "name": "Plane Smelter"
+  },
+  {
     "id": "Planetary_Logistics_Station",
     "name": "Planetary Logistics Station"
   },
@@ -310,10 +314,6 @@
   {
     "id": "Small_Carrier_Rocket",
     "name": "Small Carrier Rocket"
-  },
-  {
-    "id": "Plane_Smelter",
-    "name": "Smelter"
   },
   {
     "id": "Smelter",

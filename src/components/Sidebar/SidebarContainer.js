@@ -18,7 +18,7 @@ const SidebarContainer = () => {
 	return (
 		<SidebarWrapper>
 			<div>
-				<Logo src={`${process.env.REACT_APP_STATIC_PATH || ''}logo.png`} alt="" width="260" height="90" />
+				<Logo src={`${process.env.REACT_APP_STATIC_PATH || ''}logo.png`} alt="" width="182" height="63" />
 			</div>
 			<React.Suspense fallback={<div></div>}>
 				<Sidebar />
@@ -30,7 +30,9 @@ const SidebarContainer = () => {
 export default memo(SidebarContainer)
 
 const SidebarWrapper = styled.div`
-	min-width: 280px;
+	/* min-width: 210px; */
+	min-width: 210px;
+	width: 200px;
 	background: #bbb;
 	position: sticky;
 	top: 0;

@@ -6,13 +6,29 @@ import Page from 'components/Page'
 import Recipe from './Recipe'
 import RemoveIcon from './RemoveIcon'
 
-// const Recipe = lazy(() => import('components/Resources/Recipe'))
+const Meta = styled.div`
+	margin-right: 5px;
+	font-size: 10px;
+	background: lightgreen;
+	padding: 3px 6px;
+	border-radius: 6px;
+	font-weight: 600;
+	white-space: nowrap;
+	margin-top: 6px;
+`
+
+const MetaRow = styled.div`
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+`
 
 const imageSize = 100
 
 const Resource = ({ item, slug }) => {
-	// const iconSrc = getItemIcon(slug)
 	const iconSrc = item.icon
+
+	const { meta } = item
 
 	return (
 		<Page>
@@ -22,17 +38,20 @@ const Resource = ({ item, slug }) => {
 						{item.name} <RemoveIcon name={item.name} />
 					</Title>
 					<Description>{item.description}</Description>
+					{!!meta && (
+						<MetaRow>
+							{Object.keys(meta)
+								.sort()
+								.map(key => (
+									<Meta key={key}>
+										{key}: {meta[key]}
+									</Meta>
+								))}
+						</MetaRow>
+					)}
 				</Details>
 				{iconSrc && (
-					<Image
-						// alt={item.name}
-						alt=""
-						src={`${process.env.REACT_APP_STATIC_PATH || ''}${iconSrc}`}
-						width={imageSize}
-						height={imageSize}
-						loading="lazy"
-						// onError={() => console.warn('No Image: ' + iconSrc)}
-					/>
+					<Image alt="" src={`${process.env.REACT_APP_STATIC_PATH || ''}${iconSrc}`} width={imageSize} height={imageSize} loading="lazy" />
 				)}
 			</Header>
 			{item.recipes.map(recipe => (
@@ -71,7 +90,6 @@ const Description = styled.div`
 	font-size: 12px;
 	margin-right: 16px;
 	line-height: 1.5;
-	/* white-space: pre-line; */
 
 	@media (max-width: 400px) {
 		display: none;
