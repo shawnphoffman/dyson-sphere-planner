@@ -28,6 +28,10 @@ const ScrollContainer = styled.div`
 	overflow-x: auto;
 	min-width: 200px;
 
+	@media (max-width: 600px) {
+		display: none;
+	}
+
 	@media print {
 		display: none;
 	}
