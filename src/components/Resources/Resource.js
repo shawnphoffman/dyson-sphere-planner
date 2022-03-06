@@ -1,7 +1,8 @@
-import React, { memo } from 'react'
+import React, { memo, useContext } from 'react'
 import { styled } from '@linaria/react'
 
 import Page from 'components/Page'
+import { ProductContext } from 'context/ProductContext'
 
 import Recipe from './Recipe'
 import RemoveIcon from './RemoveIcon'
@@ -30,12 +31,14 @@ const Resource = ({ item, slug }) => {
 
 	const { meta } = item
 
+	const [{ shortNames }] = useContext(ProductContext)
+
 	return (
 		<Page>
 			<Header id={slug}>
 				<Details>
 					<Title>
-						{item.name} <RemoveIcon name={item.name} />
+						{shortNames ? item.short_name : item.name} <RemoveIcon name={item.name} />
 					</Title>
 					<Description>{item.description}</Description>
 					{!!meta && (

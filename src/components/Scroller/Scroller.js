@@ -1,13 +1,35 @@
-import React, { memo } from 'react'
+import React, { memo, useContext, useMemo } from 'react'
 import { styled } from '@linaria/react'
 
 import ItemsJson from 'data/items-stable.json'
 
+import { ProductContext } from 'context/ProductContext'
+
 //
 const Scroller = () => {
+	const [{ shortNames }] = useContext(ProductContext)
+
+	const items = useMemo(() => {
+		if (!shortNames) return ItemsJson
+
+		return ItemsJson.sort((a, b) => {
+			const aName = a.short_name
+			const bName = b.short_name
+
+			if (aName > bName) return 1
+			if (bName > aName) return -1
+			return 0
+		}).map(item => {
+			return {
+				...item,
+				name: item.short_name,
+			}
+		})
+	}, [shortNames])
+
 	return (
 		<ScrollContainer>
-			{ItemsJson.map(item => (
+			{items.map(item => (
 				<ScrollItem key={item.id}>
 					<a href={`#${item.id}`}>{item.name}</a>
 				</ScrollItem>

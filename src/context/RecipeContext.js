@@ -2,12 +2,12 @@ import React, { createContext, useReducer } from 'react'
 
 const initialState = {
 	fractions: false,
-	// cycleAmount: true,
+	useSeconds: false,
 }
 
 export const RecipeAction = {
 	TOGGLE_FRACTION: 'TOGGLE_FRACTION',
-	// TOGGLE_CYCLE_AMOUNT: 'TOGGLE_CYCLE_AMOUNT',
+	TOGGLE_SECONDS: 'TOGGLE_SECONDS',
 }
 
 export const RecipeContext = createContext(initialState)
@@ -19,11 +19,11 @@ const reducer = (state, action) => {
 				...state,
 				fractions: !state.fractions,
 			}
-		// case RecipeAction.TOGGLE_CYCLE_AMOUNT:
-		// 	return {
-		// 		...state,
-		// 		cycleAmount: !state.cycleAmount,
-		// 	}
+		case RecipeAction.TOGGLE_SECONDS:
+			return {
+				...state,
+				useSeconds: !state.useSeconds,
+			}
 		default:
 			return state
 	}

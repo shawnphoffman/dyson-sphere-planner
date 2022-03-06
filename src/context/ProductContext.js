@@ -5,11 +5,13 @@ const initialState = {
 	onePerPage: true,
 	removedProducts: [],
 	hiddenTypes: [],
+	shortNames: false,
 }
 
 export const ProductAction = {
 	TOGGLE_LEFT_MARGIN: 'TOGGLE_LEFT_MARGIN',
 	TOGGLE_ONE_PER_PAGE: 'TOGGLE_ONE_PER_PAGE',
+	TOGGLE_SHORT_NAMES: 'TOGGLE_SHORT_NAMES',
 	REMOVE_PRODUCT: 'REMOVE_PRODUCT',
 	RETURN_PRODUCT: 'RETURN_PRODUCT',
 	RETURN_ALL_PRODUCTS: 'RETURN_ALL_PRODUCTS',
@@ -30,6 +32,11 @@ const reducer = (state, action) => {
 			return {
 				...state,
 				onePerPage: !state.onePerPage,
+			}
+		case ProductAction.TOGGLE_SHORT_NAMES:
+			return {
+				...state,
+				shortNames: !state.shortNames,
 			}
 		// ITEM FILTERING
 		case ProductAction.REMOVE_PRODUCT:

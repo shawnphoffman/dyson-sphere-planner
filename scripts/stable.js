@@ -27,6 +27,7 @@ const techJson = {
 	...addonsJson.technologiesData,
 }
 const altMapJson = require('../raw/data.json')
+const namesJson = require('../raw/short-names.json')
 
 // Filenames
 const outputPaths = ['./src/data/data-stable.json', './public/data-stable.json']
@@ -372,6 +373,7 @@ Object.keys(errThang)
 		const item = errThang[key]
 		outputJson.items[key] = {
 			name: processName(item.name),
+			short_name: namesJson[key].short,
 			description: processDescription(item.description),
 			category: processCategory(item.category),
 			icon: processIcon(item.image),
@@ -418,6 +420,7 @@ const uniqueItems = Object.keys(outputJson.items)
 		return {
 			id: o,
 			name: outputJson.items[o].name,
+			short_name: namesJson[o].short,
 		}
 	})
 

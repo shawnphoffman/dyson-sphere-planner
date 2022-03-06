@@ -12,7 +12,7 @@ import Loading from './Loaders/Loading'
 // const Resource = lazy(() => import('components/Resources/Resource'))
 
 const ProductList = ({ version = 'stable' }) => {
-	const [{ removedProducts, hiddenTypes }] = useContext(ProductContext)
+	const [{ removedProducts, hiddenTypes, shortNames }] = useContext(ProductContext)
 
 	const [data, setData] = useState({})
 	// const [data, setData] = useState(rawData)
@@ -59,6 +59,18 @@ const ProductList = ({ version = 'stable' }) => {
 		return newData
 	}, [data, hiddenTypes, removedProducts])
 
+	const sortedItemKeys = useMemo(() => {
+		const sorted = Object.keys(filteredProducts).sort((a, b) => {
+			const aName = filteredProducts[a][shortNames ? 'short_name' : 'name']
+			const bName = filteredProducts[b][shortNames ? 'short_name' : 'name']
+
+			if (aName > bName) return 1
+			if (bName > aName) return -1
+			return 0
+		})
+		return sorted
+	}, [filteredProducts, shortNames])
+
 	if (isPending) return <Loading />
 
 	if (Object.keys(filteredProducts).length === 0) {
@@ -71,7 +83,7 @@ const ProductList = ({ version = 'stable' }) => {
 	return (
 		<Wrapper>
 			{/* {showV3 && <Version>Recipes for {version}</Version>} */}
-			{Object.keys(filteredProducts).map(p => (
+			{sortedItemKeys.map(p => (
 				<Sentry.ErrorBoundary key={p} fallback={<ResourceError slug={p} />}>
 					<Resource slug={p} item={data[p]} />
 				</Sentry.ErrorBoundary>

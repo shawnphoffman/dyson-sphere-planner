@@ -18,6 +18,19 @@ const Sidebar = () => {
 	const [stateRecipe, dispatchRecipe] = useContext(RecipeContext)
 
 	//
+	const handleShortNames = useCallback(() => {
+		dispatchProduct({ type: ProductAction.TOGGLE_SHORT_NAMES })
+
+		Sentry.addBreadcrumb({
+			category: 'setting-change',
+			message: 'Short names changed',
+			level: Sentry.Severity.Info,
+		})
+
+		Panelbear.track('Short_Names_Changed')
+	}, [dispatchProduct])
+
+	//
 	const handleFractions = useCallback(() => {
 		dispatchRecipe({ type: RecipeAction.TOGGLE_FRACTION })
 
@@ -128,6 +141,13 @@ const Sidebar = () => {
 					checked={stateRecipe.checked}
 					onChange={handleFractions}
 					hint="Conversions are hard"
+				/>
+				<SettingCheckbox
+					label="Short Names"
+					name="names"
+					checked={stateProduct.shortNames}
+					onChange={handleShortNames}
+					hint="Alternative items names"
 				/>
 				{/* <SettingCheckbox
 					label="Show Cycle Amounts"

@@ -1,442 +1,552 @@
 [
   {
     "id": "Accumulator",
-    "name": "Accumulator"
+    "name": "Accumulator",
+    "short_name": "Battery (Empty)"
   },
   {
     "id": "Accumulator_Full",
-    "name": "Accumulator (Full)"
+    "name": "Accumulator (Full)",
+    "short_name": "Battery (Full)"
   },
   {
     "id": "Advanced_Mining_Machine",
-    "name": "Advanced Mining Machine"
+    "name": "Advanced Mining Machine",
+    "short_name": "Miner (Big)"
   },
   {
     "id": "Annihilation_Constraint_Sphere",
-    "name": "Annihilation Constraint Sphere"
+    "name": "Annihilation Constraint Sphere",
+    "short_name": "Annihilator"
   },
   {
     "id": "Anti_Matter",
-    "name": "Antimatter"
+    "name": "Antimatter",
+    "short_name": "Atom (Antimatter)"
   },
   {
     "id": "Antimatter_Fuel_Rod",
-    "name": "Antimatter Fuel Rod"
+    "name": "Antimatter Fuel Rod",
+    "short_name": "Fuel (Black)"
   },
   {
     "id": "Artificial_Star",
-    "name": "Artificial Star"
+    "name": "Artificial Star",
+    "short_name": "Power (Star)"
   },
   {
     "id": "Assembling_Machine_Mk1",
-    "name": "Assembler MK I"
+    "name": "Assembler MK I",
+    "short_name": "Assembler I"
   },
   {
     "id": "Assembling_Machine_Mk2",
-    "name": "Assembler MK II"
+    "name": "Assembler MK II",
+    "short_name": "Assembler II"
   },
   {
     "id": "Assembling_Machine_Mk3",
-    "name": "Assembler MK III"
+    "name": "Assembler MK III",
+    "short_name": "Assembler III"
   },
   {
     "id": "Automatic_Piler",
-    "name": "Automatic Piler"
+    "name": "Automatic Piler",
+    "short_name": "Belt Piler"
   },
   {
     "id": "Carbon_Nanotube",
-    "name": "Carbon Nanotube"
+    "name": "Carbon Nanotube",
+    "short_name": "Tube (Nano)"
   },
   {
     "id": "Casimir_Crystal",
-    "name": "Casimir Crystal"
+    "name": "Casimir Crystal",
+    "short_name": "Crystal (Pink)"
   },
   {
     "id": "Chemical_Plant",
-    "name": "Chemical Plant"
+    "name": "Chemical Plant",
+    "short_name": "Plant (Chemical)"
   },
   {
     "id": "Circuit_Board",
-    "name": "Circuit Board"
+    "name": "Circuit Board",
+    "short_name": "Chip (Green)"
   },
   {
     "id": "ConveyorBeltMk1",
-    "name": "Conveyor Belt MK I"
+    "name": "Conveyor Belt MK I",
+    "short_name": "Belt I"
   },
   {
     "id": "ConveyorBeltMk2",
-    "name": "Conveyor Belt MK II"
+    "name": "Conveyor Belt MK II",
+    "short_name": "Belt II"
   },
   {
     "id": "ConveyorBeltMk3",
-    "name": "Conveyor Belt MK III"
+    "name": "Conveyor Belt MK III",
+    "short_name": "Belt III"
   },
   {
     "id": "Copper_Ingot",
-    "name": "Copper Ingot"
+    "name": "Copper Ingot",
+    "short_name": "Ingot (Copper)"
   },
   {
     "id": "Crystal_Silicon",
-    "name": "Crystal Silicon"
+    "name": "Crystal Silicon",
+    "short_name": "Crystal (Green)"
   },
   {
     "id": "Deuterium",
-    "name": "Deuterium"
+    "name": "Deuterium",
+    "short_name": "Atom (Dootie)"
   },
   {
     "id": "Deuterium_Fuel_Rod",
-    "name": "Deuteron Fuel Rod"
+    "name": "Deuteron Fuel Rod",
+    "short_name": "Fuel (Green)"
   },
   {
     "id": "Diamond",
-    "name": "Diamond"
+    "name": "Diamond",
+    "short_name": "Crystal (Diamond)"
   },
   {
     "id": "Dyson_Sphere_Component",
-    "name": "Dyson Sphere Component"
+    "name": "Dyson Sphere Component",
+    "short_name": "Dyson Component"
   },
   {
     "id": "Electric_Motor",
-    "name": "Electric Motor"
+    "name": "Electric Motor",
+    "short_name": "Motor"
   },
   {
     "id": "T_Matrix",
-    "name": "Electromagnetic Matrix"
+    "name": "Electromagnetic Matrix",
+    "short_name": "Matrix (Blue)"
   },
   {
     "id": "Electromagnetic_Turbine",
-    "name": "Electromagnetic Turbine"
+    "name": "Electromagnetic Turbine",
+    "short_name": "Motor (Green)"
   },
   {
     "id": "EM-Rail_Ejector",
-    "name": "Em-Rail Ejector"
+    "name": "Em-Rail Ejector",
+    "short_name": "Sail Gun"
   },
   {
     "id": "Energetic_Graphite",
-    "name": "Energetic Graphite"
+    "name": "Energetic Graphite",
+    "short_name": "Graphite"
   },
   {
     "id": "Energy_Exchanger",
-    "name": "Energy Exchanger"
+    "name": "Energy Exchanger",
+    "short_name": "Battery (Exchanger)"
   },
   {
     "id": "E_Matrix",
-    "name": "Energy Matrix"
+    "name": "Energy Matrix",
+    "short_name": "Matrix (Red)"
   },
   {
     "id": "Foundation",
-    "name": "Foundation"
+    "name": "Foundation",
+    "short_name": "Foundation"
   },
   {
     "id": "Fractionator",
-    "name": "Fractionator"
+    "name": "Fractionator",
+    "short_name": "Plant (Doot)"
   },
   {
     "id": "Frame_Material",
-    "name": "Frame Material"
+    "name": "Frame Material",
+    "short_name": "Dyson Frame"
   },
   {
     "id": "Gear",
-    "name": "Gear"
+    "name": "Gear",
+    "short_name": "Ring (Gear)"
   },
   {
     "id": "Geothermal_Power_Station",
-    "name": "Geothermal Power Station"
+    "name": "Geothermal Power Station",
+    "short_name": "Power (Geothermal)"
   },
   {
     "id": "Glass",
-    "name": "Glass"
+    "name": "Glass",
+    "short_name": "Glass"
   },
   {
     "id": "Graphene",
-    "name": "Graphene"
+    "name": "Graphene",
+    "short_name": "Graphene"
   },
   {
     "id": "Graviton_Lens",
-    "name": "Graviton Lens"
+    "name": "Graviton Lens",
+    "short_name": "Glass (Lens)"
   },
   {
     "id": "G_Matrix",
-    "name": "Gravity Matrix"
+    "name": "Gravity Matrix",
+    "short_name": "Matrix (Green)"
   },
   {
     "id": "High-Purity_Silicon",
-    "name": "High-Purity Silicon"
+    "name": "High-Purity Silicon",
+    "short_name": "Glass (Silicon)"
   },
   {
     "id": "Hydrogen",
-    "name": "Hydrogen"
+    "name": "Hydrogen",
+    "short_name": "Atom (Hydrogen)"
   },
   {
     "id": "Hydrogen_Fuel_Rod",
-    "name": "Hydrogen Fuel Rod"
+    "name": "Hydrogen Fuel Rod",
+    "short_name": "Fuel (Blue)"
   },
   {
     "id": "I_Matrix",
-    "name": "Information Matrix"
+    "name": "Information Matrix",
+    "short_name": "Matrix (Purple)"
   },
   {
     "id": "Interstellar_Logistic_Station",
-    "name": "Interstellar Logistics Station"
+    "name": "Interstellar Logistics Station",
+    "short_name": "Logistics II"
   },
   {
     "id": "Iron_Ingot",
-    "name": "Iron Ingot"
+    "name": "Iron Ingot",
+    "short_name": "Ingot (Iron)"
   },
   {
     "id": "Logistics_Drone",
-    "name": "Logistics Drone"
+    "name": "Logistics Drone",
+    "short_name": "Drone I"
   },
   {
     "id": "Logistic_Vessel",
-    "name": "Logistics Vessel"
+    "name": "Logistics Vessel",
+    "short_name": "Drone II"
   },
   {
     "id": "Magnet",
-    "name": "Magnet"
+    "name": "Magnet",
+    "short_name": "Ring (Magnet)"
   },
   {
     "id": "Magnetic_Coil",
-    "name": "Magnetic Coil"
+    "name": "Magnetic Coil",
+    "short_name": "Ring (Coil)"
   },
   {
     "id": "Matrix_Lab",
-    "name": "Matrix Lab"
+    "name": "Matrix Lab",
+    "short_name": "Plant Lab"
   },
   {
     "id": "Microcrystalline_Component",
-    "name": "Microcrystalline Component"
+    "name": "Microcrystalline Component",
+    "short_name": "Microcrystalline"
   },
   {
     "id": "Mini_Fusion_Power_Station",
-    "name": "Mini Fusion Power Plant"
+    "name": "Mini Fusion Power Plant",
+    "short_name": "Power (Fusion)"
   },
   {
     "id": "Miniature_Particle_Collider",
-    "name": "Miniature Particle Collider"
+    "name": "Miniature Particle Collider",
+    "short_name": "Particle Collider"
   },
   {
     "id": "Mining_Machine",
-    "name": "Mining Machine"
+    "name": "Mining Machine",
+    "short_name": "Miner"
   },
   {
     "id": "Oil_Extractor",
-    "name": "Oil Extractor"
+    "name": "Oil Extractor",
+    "short_name": "Miner (Oil)"
   },
   {
     "id": "Refinery",
-    "name": "Oil Refinery"
+    "name": "Oil Refinery",
+    "short_name": "Plant (Oil)"
   },
   {
     "id": "Orbital_Collector",
-    "name": "Orbital Collector"
+    "name": "Orbital Collector",
+    "short_name": "Logistics III"
   },
   {
     "id": "Crystal_Rubber",
-    "name": "Organic Crystal"
+    "name": "Organic Crystal",
+    "short_name": "Crystal (Organic)"
   },
   {
     "id": "Particle_Broadband",
-    "name": "Particle Broadband"
+    "name": "Particle Broadband",
+    "short_name": "Tube (Broadband)"
   },
   {
     "id": "Particle_Container",
-    "name": "Particle Container"
+    "name": "Particle Container",
+    "short_name": "Tube (Pink)"
   },
   {
     "id": "Photon_Combiner",
-    "name": "Photon Combiner"
+    "name": "Photon Combiner",
+    "short_name": "Glass (Photon)"
   },
   {
     "id": "Plane_Filter",
-    "name": "Plane Filter"
+    "name": "Plane Filter",
+    "short_name": "Glass (Filter)"
   },
   {
     "id": "Plane_Smelter",
-    "name": "Plane Smelter"
+    "name": "Plane Smelter",
+    "short_name": "Smelter II"
   },
   {
     "id": "Planetary_Logistics_Station",
-    "name": "Planetary Logistics Station"
+    "name": "Planetary Logistics Station",
+    "short_name": "Logistics I"
   },
   {
     "id": "Plasma_Exciter",
-    "name": "Plasma Exciter"
+    "name": "Plasma Exciter",
+    "short_name": "Tube (Plasma)"
   },
   {
     "id": "Plastic",
-    "name": "Plastic"
+    "name": "Plastic",
+    "short_name": "Tube (Plastic)"
   },
   {
     "id": "Prism",
-    "name": "Prism"
+    "name": "Prism",
+    "short_name": "Crystal (Prism)"
   },
   {
     "id": "Processor",
-    "name": "Processor"
+    "name": "Processor",
+    "short_name": "Chip (Orange)"
   },
   {
     "id": "ProliferatorMk1",
-    "name": "Proliferator MK I"
+    "name": "Proliferator MK I",
+    "short_name": "Proliferator I"
   },
   {
     "id": "ProliferatorMk2",
-    "name": "Proliferator MK II"
+    "name": "Proliferator MK II",
+    "short_name": "Proliferator II"
   },
   {
     "id": "ProliferatorMk3",
-    "name": "Proliferator MK III"
+    "name": "Proliferator MK III",
+    "short_name": "Proliferator III"
   },
   {
     "id": "Quantum_Chip",
-    "name": "Quantum Chip"
+    "name": "Quantum Chip",
+    "short_name": "Chip (Blue)"
   },
   {
     "id": "Ray_Receiver",
-    "name": "Ray Receiver"
+    "name": "Ray Receiver",
+    "short_name": "Power (Sail)"
   },
   {
     "id": "Refined_Oil",
-    "name": "Refined Oil"
+    "name": "Refined Oil",
+    "short_name": "Oil (Tan)"
   },
   {
     "id": "Reinforced_Thruster",
-    "name": "Reinforced Thruster"
+    "name": "Reinforced Thruster",
+    "short_name": "Thruster II"
   },
   {
     "id": "Satellite_Substation",
-    "name": "Satellite Substation"
+    "name": "Satellite Substation",
+    "short_name": "Tower II"
   },
   {
     "id": "Silicon_Ore",
-    "name": "Silicon Ore"
+    "name": "Silicon Ore",
+    "short_name": "Ore (Silicon)"
   },
   {
     "id": "Small_Carrier_Rocket",
-    "name": "Small Carrier Rocket"
+    "name": "Small Carrier Rocket",
+    "short_name": "Dyson Rocket"
   },
   {
     "id": "Smelter",
-    "name": "Smelter"
+    "name": "Smelter",
+    "short_name": "Smelter I"
   },
   {
     "id": "Solar_Panel",
-    "name": "Solar Panel"
+    "name": "Solar Panel",
+    "short_name": "Power (Solar)"
   },
   {
     "id": "Solar_Sail",
-    "name": "Solar Sail"
+    "name": "Solar Sail",
+    "short_name": "Sail"
   },
   {
     "id": "SorterMk1",
-    "name": "Sorter MK I"
+    "name": "Sorter MK I",
+    "short_name": "Sorter I"
   },
   {
     "id": "SorterMk2",
-    "name": "Sorter MK II"
+    "name": "Sorter MK II",
+    "short_name": "Sorter II"
   },
   {
     "id": "SorterMk3",
-    "name": "Sorter MK III"
+    "name": "Sorter MK III",
+    "short_name": "Sorter III"
   },
   {
     "id": "Space_Warper",
-    "name": "Space Warper"
+    "name": "Space Warper",
+    "short_name": "Warper"
   },
   {
     "id": "Splitter",
-    "name": "Splitter"
+    "name": "Splitter",
+    "short_name": "Belt Splitter"
   },
   {
     "id": "Spray_Coater",
-    "name": "Spray Coater"
+    "name": "Spray Coater",
+    "short_name": "Proliferator"
   },
   {
     "id": "Steel",
-    "name": "Steel"
+    "name": "Steel",
+    "short_name": "Beam (Steel)"
   },
   {
     "id": "Stone",
-    "name": "Stone Brick"
+    "name": "Stone Brick",
+    "short_name": "Brick"
   },
   {
     "id": "StorageMk1",
-    "name": "Storage MK I"
+    "name": "Storage MK I",
+    "short_name": "Storage I"
   },
   {
     "id": "StorageMk2",
-    "name": "Storage MK II"
+    "name": "Storage MK II",
+    "short_name": "Storage II"
   },
   {
     "id": "StorageTank",
-    "name": "Storage Tank"
+    "name": "Storage Tank",
+    "short_name": "Storage Tank"
   },
   {
     "id": "Strange_Matter",
-    "name": "Strange Matter"
+    "name": "Strange Matter",
+    "short_name": "Tube (Strange)"
   },
   {
     "id": "C_Matrix",
-    "name": "Structure Matrix"
+    "name": "Structure Matrix",
+    "short_name": "Matrix (Yellow)"
   },
   {
     "id": "Sulphuric_Acid",
-    "name": "Sulfuric Acid"
+    "name": "Sulfuric Acid",
+    "short_name": "Acid"
   },
   {
     "id": "Super-magnetic_Ring",
-    "name": "Super-Magnetic Ring"
+    "name": "Super-Magnetic Ring",
+    "short_name": "Ring (Super)"
   },
   {
     "id": "Tesla_Tower",
-    "name": "Tesla Tower"
+    "name": "Tesla Tower",
+    "short_name": "Tower I"
   },
   {
     "id": "Thermal_Power_Station",
-    "name": "Thermal Power Plant"
+    "name": "Thermal Power Plant",
+    "short_name": "Power (Thermal)"
   },
   {
     "id": "Thruster",
-    "name": "Thruster"
+    "name": "Thruster",
+    "short_name": "Thruster I"
   },
   {
     "id": "Titanium_Alloy",
-    "name": "Titanium Alloy"
+    "name": "Titanium Alloy",
+    "short_name": "Beam (Titanium)"
   },
   {
     "id": "Titanium_Crystal",
-    "name": "Titanium Crystal"
+    "name": "Titanium Crystal",
+    "short_name": "Crystal (Titanium)"
   },
   {
     "id": "Titanium_Glass",
-    "name": "Titanium Glass"
+    "name": "Titanium Glass",
+    "short_name": "Glass (Titanium)"
   },
   {
     "id": "Titanium_Ingot",
-    "name": "Titanium Ingot"
+    "name": "Titanium Ingot",
+    "short_name": "Ingot (Titanium)"
   },
   {
     "id": "Traffic_Monitor",
-    "name": "Traffic Monitor"
+    "name": "Traffic Monitor",
+    "short_name": "Belt Monitor"
   },
   {
     "id": "U_Matrix",
-    "name": "Universe Matrix"
+    "name": "Universe Matrix",
+    "short_name": "Matrix (White)"
   },
   {
     "id": "Vertical_Launching_Silo",
-    "name": "Vertical Launching Silo"
+    "name": "Vertical Launching Silo",
+    "short_name": "Dyson Silo"
   },
   {
     "id": "Water_Pump",
-    "name": "Water Pump"
+    "name": "Water Pump",
+    "short_name": "Miner (Water)"
   },
   {
     "id": "Wind_Turbine",
-    "name": "Wind Turbine"
+    "name": "Wind Turbine",
+    "short_name": "Power (Wind)"
   },
   {
     "id": "Wireless_Power_Tower",
-    "name": "Wireless Power Tower"
+    "name": "Wireless Power Tower",
+    "short_name": "Tower (Wireless)"
   }
 ]
