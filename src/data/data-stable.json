@@ -1147,7 +1147,9 @@
       "category": "Logistics",
       "icon": "belt_1.png",
       "meta": {
-        "Stack": 200
+        "Stack": 200,
+        "Speed (s)": "6|12|18|24 / sec",
+        "Speed (m)": "360|720|1080|1440 / min"
       },
       "recipes": [
         {
@@ -1204,7 +1206,9 @@
       "category": "Logistics",
       "icon": "belt_2.png",
       "meta": {
-        "Stack": 200
+        "Stack": 200,
+        "Speed (s)": "12|24|36|48 / sec",
+        "Speed (m)": "720|1440|2160|2880 / min"
       },
       "recipes": [
         {
@@ -1261,7 +1265,9 @@
       "category": "Logistics",
       "icon": "belt_3.png",
       "meta": {
-        "Stack": 200
+        "Stack": 200,
+        "Speed (s)": "30|60|90|120 / sec",
+        "Speed (m)": "1800|3600|5400|7200 / min"
       },
       "recipes": [
         {

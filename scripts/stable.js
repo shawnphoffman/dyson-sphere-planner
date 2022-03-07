@@ -380,8 +380,13 @@ Object.keys(errThang)
 			meta: {
 				Stack: processStack(item.name),
 				...processProliferators(item.name),
+				...(item.beltSpeed
+					? {
+							'Speed (s)': `${item.beltSpeed}|${item.beltSpeed * 2}|${item.beltSpeed * 3}|${item.beltSpeed * 4} / sec`,
+							'Speed (m)': `${item.beltSpeed * 60}|${item.beltSpeed * 2 * 60}|${item.beltSpeed * 3 * 60}|${item.beltSpeed * 4 * 60} / min`,
+					  }
+					: null),
 			},
-			// type: 'Item',
 			recipes: sortRecipes(recipes[key]),
 		}
 	})
@@ -465,4 +470,4 @@ testOutputPaths.forEach((path, i) => {
 })
 
 // End
-return
+// return
